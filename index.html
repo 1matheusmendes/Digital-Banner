@@ -1,54 +1,161 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Digital Banner</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script type="text/javascript">
-		
-	</script>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Matheus Mendes - Full Stack developer</title>
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body class="text-center;" style="background-image: url(img/back.jpg); ">
-	<div class="banner"> </div>
-	<br>
-	<div style=" text-align: center;">
-		<br>
-		<button class="botao">Principal</button>
-		<button class="botao">Serviços</button>
-		<button class="botao">Contato</button>
-	</div>
-	<br><br>
+  </head>
+  <body>
+    <nav class="navbar navbar-fixed-top navbar-inverse navbar-transparente">
+     <div class="container">
 
-	<!--Div principal-->
-	<div style="background: rgba(255, 255, 255, 0.2); margin-right: 10rem; margin-left: 10rem; padding-right: 2rem; padding-left: 2rem; text-align: center;">
-	<br>	
-	<div style="text-align: justify;">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit mauris, malesuada vitae feugiat tincidunt, malesuada scelerisque libero. Donec blandit semper sagittis. Phasellus quis fringilla augue. Vivamus eu erat lacus. Suspendisse lacinia tellus ac elementum accumsan. Aenean vitae sapien in turpis convallis tincidunt. Nunc mattis convallis mi, a suscipit elit consequat vel.
-		</p>
-	</div>
-	<br><br>
-	<div style="text-align: right; ">
-		<img style="width:200px; border-radius: 80%; float: right; margin-right:2rem; -webkit-shape-outside:circle(); shape-outside:circle(); height: auto; margin: 1rem;" src="img/prop1.png">
-		<br>
-			<h3>Programa de vendas - PDV</h3>
-			<p style="text-align: justify; padding-left: 20rem;">Nam finibus maximus facilisis. Phasellus id mattis nulla. Duis molestie cursus fermentum. Proin ut lorem et lacus ultricies varius sit amet et massa. Proin feugiat at nulla eget euismod. Nullam odio magna, vulputate sit amet auctor vel, tincidunt non massa. Phasellus porta tristique dolor volutpat tincidunt. </p>
-	</div>
-	<br>
-	<div style="text-align: left;">
-		<img style="width:200px; border-radius: 80%; float: left; margin-left: 5rem; -webkit-shape-outside:circle(); shape-outside:circle(); height: auto; margin: 1rem;" src="img/prop1.png">
-		<br>
-			<h3>Programa de vendas - PDV</h3>
-			<p style="text-align: justify; padding-right: 20rem;">Nam finibus maximus facilisis. Phasellus id mattis nulla. Duis molestie cursus fermentum. Proin ut lorem et lacus ultricies varius sit amet et massa. Proin feugiat at nulla eget euismod. Nullam odio magna, vulputate sit amet auctor vel <p>
-	</div>
-	<div style="text-align: right;">
-		<img style="width:200px; border-radius: 80%; float: right; margin-right:2rem; -webkit-shape-outside:circle(); shape-outside:circle(); height: auto; margin: 1rem;" src="img/prop1.png">
-		<br>
-			<h3>Programa de vendas - PDV</h3>
-			<p style="text-align: justify; padding-left: 20rem;">Nam finibus maximus facilisis. Phasellus id mattis nulla. Duis molestie cursus fermentum. Proin ut lorem et lacus ultricies varius sit amet et massa. Proin feugiat at nulla eget euismod. Nullam odio magna, vulputate sit amet auctor vel.</p>
-			<br><br><br><br><br>
-	</div>
+       <!--header-->
+       <div class="navbar-header">
+       <!--Botão toggle-->
+       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
+         <span class="sr-only">alternar navegação</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
 
-	</div>
-</body>
+         <a href="index.html" class="navbar-brand">
+           <span class="img-logo">HeadRed</span>
+         </a>
+
+       </div>
+       <!--Navbar-->
+       <div class="collapse navbar-collapse" id="barra-navegacao">
+         <ul class="nav navbar-nav navbar-right">
+           <li><a href="">Sobre</a></li>
+           <li><a href="">Contato</a></li>
+           <li><a href="">Habilidades</a></li>
+           <li class="divisor" role="separetion"></li>
+           <li><a href="">Ajuda</a></li>
+         </ul>
+       </div>
+     </div> <!-- Fim do Container -->
+   </nav><!--Fim da nav-->
+   <!--Capa-->
+   <div class="capa">
+        <div class="texto-capa">
+          <h1>Matheus Mendes - Full Stack developer</h1>
+          <a href="" class="btn btn-custom btn-roxo btn-lg">Minhas Habilidades</a>
+        </div>
+      </div>
+      <!--Conteudos-->
+    <section id="servicos">
+      <div class="container">
+        <div class="row">
+          <div style="text-align: right; margin-right: 10rem; ">
+            <h2 style="margin: 60px;">Equipe</h2>
+              <img style="width:200px; border-radius: 80%; float: right; margin-right:2rem; -webkit-shape-outside:circle(); shape-outside:circle(); height: auto; margin: 1rem;" src="img/matheusavata.jpeg">
+                <h3>Acadêmico de Engenharia de Computação</h3><br>
+                  <p style="text-align: justify; padding-left: 25rem;">Olá, me chamo Matheus Mendes sou academico do 6º semestre de Engenharia
+                                                                       de Computação, ao longo da graduação adquiri habilidades de desenvolvimento ágil da web
+                                                                       assim como em outras linguagens: Java e C++. Mas minha principal competência é a criação
+                                                                       de paginas web utlizando ferramentas: JavaScript, CSS e HTML e algumas frameworks
+                                                                       como: Vue.js, jQuery e Bootstrap</p>
+          </div>
+        </div><!--Fim do row-->
+        <div class="row">
+          <div style="text-align: left; margin-right: 20rem;">
+              <img style="width:200px; border-radius: 80%; float: left;; margin-right:2rem; -webkit-shape-outside:circle(); shape-outside:circle(); height: auto; margin: 1rem;" src="img/pauloavata.png">
+                <h3>Acadêmico de Engenharia de Computação</h3><br>
+                  <p style="text-align: justify; padding-right: 12rem;">Cursando Engenharia da Computação pela Faculdade Meta, com previsão de término para o ano de 2020.
+                                                                        Domínio médio no idioma inglês. Familiarizado com desenvolvimento de softwares, onde dois deles, estão postados na Play Store.
+                                                                        Conhecimento intermediário em desenvolvimento de softwares, desenvolvimento de jogos e modelagem 3D.
+                                                                        Perfil de profissional responsável, com facilidade para trabalho em equipe e rápida adaptação para                                                  assuntos de minha área de atuação. Em busca de crescimento profissional e conhecimento.</p>
+          </div>
+        </div><!--Fim do row-->
+      </div><!--Fim do Container-->
+
+      <!-- Projetos -->
+      <section class="projects">
+					<div class="wrapper">
+						<h1 style="padding-left:20rem; padding-top:60px;" class="sections-title">Projetos</h1>
+
+						<div class="project-item">
+							<h2 class="project-item_title">Charmande</h2>
+							<a href="#" target="_blank">
+								<img src="img/charmande.png" alt="Charmande" class="project-item_img">
+							</a>
+							<p class="project-item_description">Projeto elaborado na primeira hackathon PRODAP - Processamento de Dados do Amapá, este projeto encontra-se em desenvolvimento.</p>
+              <p class="project-item_description">Disponivel em <a href="https://github.com/HeadRed">ReadRed</a> por <a href="https://github.com/1matheusmendes">@1matheusmedes</a>, <a href="https://github.com/henrique-dev">@henrique-dev</a> e <a href="https://github.com/Lucas3800">@Lucas3800</a>
+              </a>
+              </p>
+              <h4 style="text-align:center;">Ferramentas utilizadas no projeto</h4>
+              <div class="project-item_tags"><span class="label label-primary">HTML</span>
+                                             <span class="label label-primary">CSS</span>
+                                             <span class="label label-primary">JavaScript</span>
+                                             <span class="label label-primary">Java Web</span>
+                                             <span class="label label-primary">MYSQL</span>
+             </div>
+						</div>
+	     </section>
+
+    </section><!--servicos-->
+    <section class="contact" id="contact">
+		    <div class="wrapper">
+					<div class="contact-link">
+						<a data-scroll href="#contact"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+					</div>
+
+				<h1 style="padding-left: 27rem;" class="sections-title">Contato</h1>
+					<div class="feedback-container">
+						<div id="feedback" class="feedback"><span id="feedbackText"></span><span class="feedback-close" id="feedbackClose">x</span></div>
+					</div>
+
+				<form style="margin: 27rem; margin-top: auto;"  method="post" id="contactForm">
+					<input type="text" placeholder="Nome" id="name" name="name">
+					   <input type="email" placeholder="E-mail" id="email" name="email">
+							<textarea placeholder="Mensagem" id="message" name="message"></textarea>
+				</form>
+					<div class="send" id="send">Enviar</div>
+				</div>
+			</section>
+
+    <!--Rodape-->
+    <footer id="rodape">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <img src="" alt="">
+          </div>
+
+          <div class="col-md-2">
+            <h4>Matheus Mendes</h4>
+            <ul class="nav">
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">Steam</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <h4>Paulo Henrique</h4>
+            <ul class="nav">
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Steam</a></li
+            </ul>
+          </div>
+
+          <div class="col-md-2">
+            <h4>Links Uteis</h4>
+            <ul class="nav">
+              <li><a href="#">Faculdade Meta</a></li>
+              <li><a href="#">HeadRed</a></li>
+            </ul>
+          </div>
+        </div> <!--Fim da row-->
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,72 +1,279 @@
 /*
- * Estrutura base
-
-
-html,
-body {
-  height: 100%;
-  background-color: #333;
-}
-
-body {
-  display: -ms-flexbox;
-  display: flex;
-  color: #fff;
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
-}
-
-.cover-container {
-  max-width: 42em;
-}
- */
-/*
-* Transição
+*
+*@author Matheus Mendes
+*@version 1.0
 */
-.banner {
-    /* Imagem que vou usar */
-    background-image: url("img/banner2.png");
-    background-repeat: no-repeat;
-    background-size: auto;
-    border: 2px solid black;
-    /* Altura determinada */
-    min-height: 500px; 
-
+* {
+    margin: 0;
+    padding:0;
+}
+html, body, .capa{
+	height: 100%;
+	overflow: auto;
+}
+body{
+	background: url('img/demo.gif'),
+				      url('imagens/ruido.png'),
+				      linear-gradient(50deg,#ff4169,#7c26f8);
+	background-attachment: fixed;
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+	overflow-x: hidden;
+}
+.img-logo{
+	height: 40px;
+	width: 132px;
+	display: block;
+	background: url('imagens/spotify.svg') no-repeat;
+	background-size: contain;
+	color: transparent;
 }
 
-#centro {
+nav.navbar-transparente{
+	padding: 15px 0px;
+	background: rgba(0,0,0,0.6);
+	border: none;
+}
+
+.navbar-brand{
+	padding: 5px 15px;
+}
+.divisor{
+	width: 1px;
+	height: 16px;
+	background: white;
+	margin: 16px 10px;
+}
+
+.navbar-inverse .navbar-nav>li>a, footer .nav a {
+	color: white;
+}
+.navbar-inverse .navbar-nav>li>a:hover,footer .nav a:hover {
+	color: #9bf0e1;
+	background: none;
+}
+/* -- Imagens de capa -- */
+.capa{
+	display: table;
+	width: 100%;
+}
+.texto-capa{
 	text-align: center;
-	color: white;	
-}    
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+}
+/* -- Botões -- */
+.btn-custom{
+	color: white;
+	border-radius: 500px;
+	-webkit-border-radius:500px;
+	-moz-border-radius:500px;
+	text-transform: uppercase;
+	transition: background 0.4s, color 0.4s;
+}
+.btn-roxo{
+	background: #7c25f8;
+}
+.btn-roxo:hover{
+	background-color: #6207e3;
+	color: white;
+}
+.btn-branco{
+	border: 2px solid white;
+}
+.btn-branco:hover{
+	background-color: white;
+	color: black;
+}
+/* -- secao servico-- */
 
-.botao{
-	margin: auto;
-	background-color:	#F0F8FF; /* Green */
-    border: 1px solid green;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    float: center;
+#servicos{
+	background:white;
+	padding-top:20px;
+	padding-bottom: 20px;
 }
-.button:hover {
-    background-color: #3e8e41;
+#projetos{
+  background:white;
 }
-.button:not(:last-child) {
-    border-right: none; /* Prevent double borders */
+.albuns{
+	padding:10px 0px 10px 0px;
 }
-p{
-	font-family: serif;
+/* PROJECTS */
+
+.projects{
+	margin: 40px 0;
+  background: #d3d3d3;
 }
-.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: red;
-   color: white;
-   text-align: center;
-   }
-   
+
+.projects-title{
+	margin-bottom: 60px;
+}
+
+.project-item{
+	padding: 20px 0 80px 0;
+}
+
+.project-item_title{
+	text-align: center;
+}
+
+.project-item_img{
+	margin: 20px auto 0 auto;
+	display: block;
+	width: 100%;
+	max-width: 535px;
+}
+
+.project-item_description{
+	margin: 20px auto 40px auto;
+	text-align: center;
+	max-width: 700px;
+}
+
+.project-item_tags{
+	text-align: center;
+}
+
+/* --Recursos-- */
+
+#recursos{
+	padding-top:20px;
+	padding-bottom: 20px;
+	color: white;
+}
+
+.rotacionar{
+	-ms-transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+	padding-left: 80px;
+}
+
+footer{
+	background: #000;
+	padding: 50px 0px 20px 0px;
+	position: relative;
+}
+
+.item-rede-social{
+	float:right;
+}
+/*Contato*/
+
+.contact{
+	padding: 90px 0 120px 0;
+  background: #ffffff;
+}
+
+.contact-link{
+	padding: 10px 20px 13px 20px;
+	background: #3a7f7d;
+	position: fixed;
+	right: 0;
+	top: 60px;
+    transition: all 0.3s ease;
+ 	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+}
+
+.contact-link:hover{
+	background: #57aaa8;
+	cursor: pointer;
+}
+
+.contact-link a{
+	color: #fff;
+}
+
+.contact input:focus, .contact textarea:focus{
+	outline-color: #fff;
+}
+
+.contact input{
+	width: 49%;
+	padding: 10px;
+	border: none;
+	float: left;
+	box-sizing: border-box;
+}
+
+@media(max-width: 648px){
+	.contact input{
+		width: 100%;
+	}
+}
+
+.contact input:first-child{
+	margin-right: 2%;
+}
+
+@media(max-width: 648px){
+	.contact input:first-child{
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+}
+
+.contact textarea{
+	width: 100%;
+	resize: none;
+	height: 250px;
+	margin-top: 30px;
+	border: none;
+	padding: 10px;
+	resize: none;
+}
+
+.contact input, .contact textarea{
+	color: #333;
+}
+
+.send{
+	background: #a9a9a9;
+	display: block;
+	color: #fff;
+	padding: 10px 40px;
+	float: right;
+
+    transition: all 0.3s ease;
+ 	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+}
+
+.send:hover{
+	background: #57aaa8;
+	cursor: pointer;
+}
+
+.feedback-container{
+	width: 100%;
+	height: 39px;
+	margin-bottom: 10px;
+}
+
+.feedback{
+	padding: 10px 8px;
+	margin: 5px 0 20px 0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	width: 100%;
+	display: none;
+	color: #fff;
+}
+
+.feedback-close{
+	float: right;
+}
+
+.feedback-red{
+	background: #c45252;
+}
+
+.feedback-green{
+	background: #589b6d;
+}
